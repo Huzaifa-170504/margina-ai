@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to the MARGINA business workspace.">
+  <title>Sign in — MARGINA</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body class="auth-body">
+  <main class="auth-layout">
+    <section class="auth-story">
+      <a class="brand" href="/">MARGINA</a>
+      <div>
+        <p class="eyebrow">Business workspace</p>
+        <h1>Evidence before explanation.</h1>
+        <p>Review published margins, process coverage, and source orders within your authorized organization and branches.</p>
+      </div>
+      <p class="auth-footnote">Need a public walkthrough? <a href="{{ url_for('web.demo') }}">Open the synthetic recruiter demo.</a></p>
+    </section>
+    <section class="auth-card" aria-labelledby="login-title">
+      <div>
+        <p class="eyebrow">Secure session</p>
+        <h2 id="login-title">Sign in to continue</h2>
+        <p>Use an account provisioned by your MARGINA administrator.</p>
+      </div>
+      <form id="login-form">
+        <label>Email address<input id="email" name="email" type="email" autocomplete="username" required autofocus></label>
+        <label>Password<input id="password" name="password" type="password" autocomplete="current-password" minlength="12" maxlength="128" required></label>
+        <button id="login-button" class="button button-wide" type="submit">Sign in</button>
+      </form>
+      <p id="login-error" class="form-error" role="alert" aria-live="assertive"></p>
+      <p class="security-note">Sessions expire automatically. Repeated failed attempts temporarily lock the account.</p>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='login.js') }}" defer></script>
+</body>
+</html>

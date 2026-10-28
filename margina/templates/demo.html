@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore MARGINA with a published synthetic distributor snapshot.">
+  <title>MARGINA — Published synthetic demo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+  <header class="site-header site-header-dark">
+    <a class="brand" href="/">MARGINA</a>
+    <nav aria-label="Demo navigation">
+      <span class="badge badge-demo">Synthetic data</span>
+      <a href="{{ url_for('web.login') }}">Business login</a>
+    </nav>
+  </header>
+  <main class="dashboard page-shell">
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">Recruiter sandbox · published evidence</p>
+        <h1>Margin and process performance</h1>
+        <p class="section-copy">A live, read-only view computed from the currently published synthetic database snapshot.</p>
+      </div>
+      <label class="filter-control">Branch
+        <select id="branch"><option value="">All branches</option></select>
+      </label>
+    </section>
+
+    <div id="dashboard-status" class="status-banner" role="status">Loading published snapshot…</div>
+
+    <section class="metadata-strip" aria-label="Snapshot metadata">
+      <div><span>Snapshot</span><strong id="snapshot-id">—</strong></div>
+      <div><span>Metric version</span><strong id="metric-version">—</strong></div>
+      <div><span>Published</span><strong id="published-at">—</strong></div>
+      <div><span>Latest source event</span><strong id="source-freshness">—</strong></div>
+    </section>
+
+    <section class="cards" aria-label="Key performance indicators" aria-live="polite">
+      <article><span>Net revenue</span><strong id="net-revenue">—</strong><small>After discounts and returns</small></article>
+      <article><span>Contribution</span><strong id="contribution">—</strong><small>After COGS and variable costs</small></article>
+      <article><span>Contribution margin</span><strong id="margin">—</strong><small id="coverage">Cost coverage —</small></article>
+      <article><span>Median order cycle</span><strong id="median-cycle">—</strong><small id="process-coverage">Process coverage —</small></article>
+    </section>
+
+    <section class="split-grid">
+      <article class="panel">
+        <div class="panel-heading">
+          <div><p class="eyebrow">Process evidence</p><h2>Directly-follows paths</h2></div>
+          <div class="signal-pills">
+            <span class="signal"><strong id="sla-count">—</strong> SLA breaches</span>
+            <span class="signal"><strong id="loop-count">—</strong> approval loops</span>
+          </div>
+        </div>
+        <div id="transitions" class="transition-list" aria-live="polite"></div>
+        <p id="process-limitation" class="notice notice-neutral"></p>
+      </article>
+
+      <article class="panel scenario">
+        <p class="eyebrow">Deterministic scenario</p>
+        <h2>Shipping conversion</h2>
+        <p>Make every assumption visible. Results are modeled estimates, not proven profit.</p>
+        <form id="scenario-form">
+          <label>Shipments<input name="shipment_count" type="number" min="0" max="50000" value="100" required></label>
+          <label>Saving per shipment<input name="saving_per_shipment" type="number" min="0" step="0.01" value="500" required></label>
+          <label>Incremental cost<input name="incremental_cost" type="number" min="0" step="0.01" value="10000" required></label>
+          <button class="button" type="submit">Calculate estimate</button>
+        </form>
+        <p id="scenario-result" class="scenario-result" aria-live="polite"></p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div><p class="eyebrow">Linked evidence</p><h2>Source orders</h2></div>
+        <p id="order-count" class="panel-summary"></p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Source order</th><th>Branch</th><th>Net revenue</th><th>Recognized COGS</th><th>Variable costs</th><th>Contribution</th><th>Cycle</th><th>Signals</th></tr></thead>
+          <tbody id="orders"></tbody>
+        </table>
+      </div>
+      <p class="notice">Association only. Selected operational patterns do not establish that delays caused financial outcomes.</p>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='demo.js') }}" defer></script>
+</body>
+</html>

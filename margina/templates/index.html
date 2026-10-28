@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MARGINA links contribution margin evidence with order-to-dispatch process performance.">
+  <title>MARGINA — Business performance intelligence</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body class="landing-body">
+  <header class="site-header site-header-light">
+    <a class="brand" href="/">MARGINA</a>
+    <nav aria-label="Primary navigation">
+      <a href="{{ url_for('web.demo') }}">Recruiter demo</a>
+      <a class="nav-button" href="{{ url_for('web.login') }}">Business login</a>
+    </nav>
+  </header>
+  <main class="landing">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Margin intelligence × process intelligence</p>
+        <h1>Find what slows your business. Measure what it costs.</h1>
+        <p class="hero-copy">Connect financial outcomes to order-level operational evidence without presenting association as causation.</p>
+        <div class="hero-actions">
+          <a class="button" href="{{ url_for('web.demo') }}">Explore synthetic evidence</a>
+          <a class="text-link" href="{{ url_for('web.login') }}">Open business workspace <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <aside class="hero-proof" aria-label="Product capabilities">
+        <p class="proof-label">Published snapshot</p>
+        <strong>Trace every claim</strong>
+        <ul>
+          <li>Versioned margin definitions</li>
+          <li>Order-to-dispatch timelines</li>
+          <li>Source-linked evidence</li>
+          <li>Explicit scenario assumptions</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

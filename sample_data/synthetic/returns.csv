@@ -1,0 +1,4 @@
+tenant_id,source_system,return_id,order_id,line_id,refunded_revenue,inventory_recovery_amount,currency,effective_at,original_timezone,source_reference
+demo-distributor,synthetic_erp,RET-1003-01,ORD-1003,L1,20000.00,12000.00,PKR,2026-07-22T06:00:00Z,Asia/Karachi,synthetic/returns/RET-1003-01
+demo-distributor,synthetic_erp,RET-1008-01,ORD-1008,L1,15000.00,9000.00,PKR,2026-09-01T06:00:00Z,Asia/Karachi,synthetic/returns/RET-1008-01
+demo-distributor,synthetic_erp,RET-1010-01,ORD-1010,L1,10000.00,6000.00,PKR,2026-09-20T06:00:00Z,Asia/Karachi,synthetic/returns/RET-1010-01

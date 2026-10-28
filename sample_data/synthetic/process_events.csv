@@ -1,0 +1,57 @@
+tenant_id,source_system,event_id,order_id,activity,lifecycle_marker,occurred_at,ingested_at,original_timezone,source_reference
+demo-distributor,synthetic_erp,EV-1001-01,ORD-1001,Order received,complete,2026-07-05T04:00:00Z,2026-07-05T04:05:00Z,Asia/Karachi,synthetic/events/EV-1001-01
+demo-distributor,synthetic_erp,EV-1001-02,ORD-1001,Approval requested,complete,2026-07-05T05:00:00Z,2026-07-05T05:05:00Z,Asia/Karachi,synthetic/events/EV-1001-02
+demo-distributor,synthetic_erp,EV-1001-03,ORD-1001,Approved,complete,2026-07-05T07:00:00Z,2026-07-05T07:05:00Z,Asia/Karachi,synthetic/events/EV-1001-03
+demo-distributor,synthetic_erp,EV-1001-04,ORD-1001,Dispatched,complete,2026-07-06T06:00:00Z,2026-07-06T06:05:00Z,Asia/Karachi,synthetic/events/EV-1001-04
+demo-distributor,synthetic_erp,EV-1002-01,ORD-1002,Order received,complete,2026-07-10T04:00:00Z,2026-07-10T04:05:00Z,Asia/Karachi,synthetic/events/EV-1002-01
+demo-distributor,synthetic_erp,EV-1002-02,ORD-1002,Approval requested,complete,2026-07-10T05:00:00Z,2026-07-10T05:05:00Z,Asia/Karachi,synthetic/events/EV-1002-02
+demo-distributor,synthetic_erp,EV-1002-03,ORD-1002,Approval rejected,complete,2026-07-10T12:00:00Z,2026-07-10T12:05:00Z,Asia/Karachi,synthetic/events/EV-1002-03
+demo-distributor,synthetic_erp,EV-1002-04,ORD-1002,Approval requested,complete,2026-07-11T04:00:00Z,2026-07-11T04:05:00Z,Asia/Karachi,synthetic/events/EV-1002-04
+demo-distributor,synthetic_erp,EV-1002-05,ORD-1002,Approved,complete,2026-07-11T10:00:00Z,2026-07-11T10:05:00Z,Asia/Karachi,synthetic/events/EV-1002-05
+demo-distributor,synthetic_erp,EV-1002-06,ORD-1002,Dispatched,complete,2026-07-12T10:00:00Z,2026-07-12T10:05:00Z,Asia/Karachi,synthetic/events/EV-1002-06
+demo-distributor,synthetic_erp,EV-1003-01,ORD-1003,Order received,complete,2026-07-16T04:00:00Z,2026-07-16T04:05:00Z,Asia/Karachi,synthetic/events/EV-1003-01
+demo-distributor,synthetic_erp,EV-1003-02,ORD-1003,Approval requested,complete,2026-07-16T05:00:00Z,2026-07-16T05:05:00Z,Asia/Karachi,synthetic/events/EV-1003-02
+demo-distributor,synthetic_erp,EV-1003-03,ORD-1003,Approved,complete,2026-07-16T07:00:00Z,2026-07-16T07:05:00Z,Asia/Karachi,synthetic/events/EV-1003-03
+demo-distributor,synthetic_erp,EV-1003-04,ORD-1003,Dispatched,complete,2026-07-17T00:00:00Z,2026-07-17T00:05:00Z,Asia/Karachi,synthetic/events/EV-1003-04
+demo-distributor,synthetic_erp,EV-1004-01,ORD-1004,Order received,complete,2026-07-24T04:00:00Z,2026-07-24T04:05:00Z,Asia/Karachi,synthetic/events/EV-1004-01
+demo-distributor,synthetic_erp,EV-1004-02,ORD-1004,Approval requested,complete,2026-07-24T05:00:00Z,2026-07-24T05:05:00Z,Asia/Karachi,synthetic/events/EV-1004-02
+demo-distributor,synthetic_erp,EV-1004-03,ORD-1004,Approved,complete,2026-07-24T09:00:00Z,2026-07-24T09:05:00Z,Asia/Karachi,synthetic/events/EV-1004-03
+demo-distributor,synthetic_erp,EV-1004-04,ORD-1004,Dispatched,complete,2026-07-25T12:00:00Z,2026-07-25T12:05:00Z,Asia/Karachi,synthetic/events/EV-1004-04
+demo-distributor,synthetic_erp,EV-1005-01,ORD-1005,Order received,complete,2026-08-03T04:00:00Z,2026-08-03T04:05:00Z,Asia/Karachi,synthetic/events/EV-1005-01
+demo-distributor,synthetic_erp,EV-1005-02,ORD-1005,Approval requested,complete,2026-08-03T05:00:00Z,2026-08-03T05:05:00Z,Asia/Karachi,synthetic/events/EV-1005-02
+demo-distributor,synthetic_erp,EV-1005-03,ORD-1005,Approved,complete,2026-08-03T08:00:00Z,2026-08-03T08:05:00Z,Asia/Karachi,synthetic/events/EV-1005-03
+demo-distributor,synthetic_erp,EV-1005-04,ORD-1005,Dispatched,complete,2026-08-04T10:00:00Z,2026-08-04T10:05:00Z,Asia/Karachi,synthetic/events/EV-1005-04
+demo-distributor,synthetic_erp,EV-1006-01,ORD-1006,Order received,complete,2026-08-09T04:00:00Z,2026-08-09T04:05:00Z,Asia/Karachi,synthetic/events/EV-1006-01
+demo-distributor,synthetic_erp,EV-1006-02,ORD-1006,Approval requested,complete,2026-08-09T05:00:00Z,2026-08-09T05:05:00Z,Asia/Karachi,synthetic/events/EV-1006-02
+demo-distributor,synthetic_erp,EV-1006-03,ORD-1006,Approval rejected,complete,2026-08-09T14:00:00Z,2026-08-09T14:05:00Z,Asia/Karachi,synthetic/events/EV-1006-03
+demo-distributor,synthetic_erp,EV-1006-04,ORD-1006,Approval requested,complete,2026-08-10T04:00:00Z,2026-08-10T04:05:00Z,Asia/Karachi,synthetic/events/EV-1006-04
+demo-distributor,synthetic_erp,EV-1006-05,ORD-1006,Approved,complete,2026-08-10T12:00:00Z,2026-08-10T12:05:00Z,Asia/Karachi,synthetic/events/EV-1006-05
+demo-distributor,synthetic_erp,EV-1006-06,ORD-1006,Dispatched,complete,2026-08-11T16:00:00Z,2026-08-11T16:05:00Z,Asia/Karachi,synthetic/events/EV-1006-06
+demo-distributor,synthetic_erp,EV-1007-01,ORD-1007,Order received,complete,2026-08-17T04:00:00Z,2026-08-17T04:05:00Z,Asia/Karachi,synthetic/events/EV-1007-01
+demo-distributor,synthetic_erp,EV-1007-02,ORD-1007,Approval requested,complete,2026-08-17T06:00:00Z,2026-08-17T06:05:00Z,Asia/Karachi,synthetic/events/EV-1007-02
+demo-distributor,synthetic_erp,EV-1007-03,ORD-1007,Approved,complete,2026-08-17T10:00:00Z,2026-08-17T10:05:00Z,Asia/Karachi,synthetic/events/EV-1007-03
+demo-distributor,synthetic_erp,EV-1007-04,ORD-1007,Dispatched,complete,2026-08-18T08:00:00Z,2026-08-18T08:05:00Z,Asia/Karachi,synthetic/events/EV-1007-04
+demo-distributor,synthetic_erp,EV-1008-01,ORD-1008,Order received,complete,2026-08-25T04:00:00Z,2026-08-25T04:05:00Z,Asia/Karachi,synthetic/events/EV-1008-01
+demo-distributor,synthetic_erp,EV-1008-02,ORD-1008,Approval requested,complete,2026-08-25T05:00:00Z,2026-08-25T05:05:00Z,Asia/Karachi,synthetic/events/EV-1008-02
+demo-distributor,synthetic_erp,EV-1008-03,ORD-1008,Approved,complete,2026-08-26T02:00:00Z,2026-08-26T02:05:00Z,Asia/Karachi,synthetic/events/EV-1008-03
+demo-distributor,synthetic_erp,EV-1008-04,ORD-1008,Dispatched,complete,2026-08-26T20:00:00Z,2026-08-26T20:05:00Z,Asia/Karachi,synthetic/events/EV-1008-04
+demo-distributor,synthetic_erp,EV-1009-01,ORD-1009,Order received,complete,2026-09-02T04:00:00Z,2026-09-02T04:05:00Z,Asia/Karachi,synthetic/events/EV-1009-01
+demo-distributor,synthetic_erp,EV-1009-02,ORD-1009,Approval requested,complete,2026-09-02T05:00:00Z,2026-09-02T05:05:00Z,Asia/Karachi,synthetic/events/EV-1009-02
+demo-distributor,synthetic_erp,EV-1009-03,ORD-1009,Approved,complete,2026-09-03T04:00:00Z,2026-09-03T04:05:00Z,Asia/Karachi,synthetic/events/EV-1009-03
+demo-distributor,synthetic_erp,EV-1009-04,ORD-1009,Dispatched,complete,2026-09-05T04:00:00Z,2026-09-05T04:05:00Z,Asia/Karachi,synthetic/events/EV-1009-04
+demo-distributor,synthetic_erp,EV-1010-01,ORD-1010,Order received,complete,2026-09-09T04:00:00Z,2026-09-09T04:05:00Z,Asia/Karachi,synthetic/events/EV-1010-01
+demo-distributor,synthetic_erp,EV-1010-02,ORD-1010,Approval requested,complete,2026-09-09T05:00:00Z,2026-09-09T05:05:00Z,Asia/Karachi,synthetic/events/EV-1010-02
+demo-distributor,synthetic_erp,EV-1010-03,ORD-1010,Approval rejected,complete,2026-09-09T16:00:00Z,2026-09-09T16:05:00Z,Asia/Karachi,synthetic/events/EV-1010-03
+demo-distributor,synthetic_erp,EV-1010-04,ORD-1010,Approval requested,complete,2026-09-10T06:00:00Z,2026-09-10T06:05:00Z,Asia/Karachi,synthetic/events/EV-1010-04
+demo-distributor,synthetic_erp,EV-1010-05,ORD-1010,Approved,complete,2026-09-11T08:00:00Z,2026-09-11T08:05:00Z,Asia/Karachi,synthetic/events/EV-1010-05
+demo-distributor,synthetic_erp,EV-1010-06,ORD-1010,Dispatched,complete,2026-09-12T12:00:00Z,2026-09-12T12:05:00Z,Asia/Karachi,synthetic/events/EV-1010-06
+demo-distributor,synthetic_erp,EV-1011-01,ORD-1011,Order received,complete,2026-09-17T04:00:00Z,2026-09-17T04:05:00Z,Asia/Karachi,synthetic/events/EV-1011-01
+demo-distributor,synthetic_erp,EV-1011-02,ORD-1011,Approval requested,complete,2026-09-17T05:00:00Z,2026-09-17T05:05:00Z,Asia/Karachi,synthetic/events/EV-1011-02
+demo-distributor,synthetic_erp,EV-1011-03,ORD-1011,Approval rejected,complete,2026-09-17T10:00:00Z,2026-09-17T10:05:00Z,Asia/Karachi,synthetic/events/EV-1011-03
+demo-distributor,synthetic_erp,EV-1011-04,ORD-1011,Approval requested,complete,2026-09-18T04:00:00Z,2026-09-18T04:05:00Z,Asia/Karachi,synthetic/events/EV-1011-04
+demo-distributor,synthetic_erp,EV-1011-05,ORD-1011,Approved,complete,2026-09-18T20:00:00Z,2026-09-18T20:05:00Z,Asia/Karachi,synthetic/events/EV-1011-05
+demo-distributor,synthetic_erp,EV-1011-06,ORD-1011,Dispatched,complete,2026-09-19T21:00:00Z,2026-09-19T21:05:00Z,Asia/Karachi,synthetic/events/EV-1011-06
+demo-distributor,synthetic_erp,EV-1012-01,ORD-1012,Order received,complete,2026-09-25T04:00:00Z,2026-09-25T04:05:00Z,Asia/Karachi,synthetic/events/EV-1012-01
+demo-distributor,synthetic_erp,EV-1012-02,ORD-1012,Approval requested,complete,2026-09-25T05:00:00Z,2026-09-25T05:05:00Z,Asia/Karachi,synthetic/events/EV-1012-02
+demo-distributor,synthetic_erp,EV-1012-03,ORD-1012,Approved,complete,2026-09-26T04:00:00Z,2026-09-26T04:05:00Z,Asia/Karachi,synthetic/events/EV-1012-03
+demo-distributor,synthetic_erp,EV-1012-04,ORD-1012,Dispatched,complete,2026-09-27T14:00:00Z,2026-09-27T14:05:00Z,Asia/Karachi,synthetic/events/EV-1012-04

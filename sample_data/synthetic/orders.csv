@@ -1,0 +1,13 @@
+tenant_id,source_system,order_id,customer_id,branch_id,currency,occurred_at,original_timezone,gross_sales,discount,tax,source_reference
+demo-distributor,synthetic_erp,ORD-1001,CUST-001,Branch A,PKR,2026-07-05T04:00:00Z,Asia/Karachi,150000.00,5000.00,23200.00,synthetic/orders/ORD-1001
+demo-distributor,synthetic_erp,ORD-1002,CUST-002,Branch B,PKR,2026-07-10T04:00:00Z,Asia/Karachi,210000.00,10000.00,32000.00,synthetic/orders/ORD-1002
+demo-distributor,synthetic_erp,ORD-1003,CUST-003,Branch C,PKR,2026-07-16T04:00:00Z,Asia/Karachi,120000.00,0.00,19200.00,synthetic/orders/ORD-1003
+demo-distributor,synthetic_erp,ORD-1004,CUST-004,Branch A,PKR,2026-07-24T04:00:00Z,Asia/Karachi,180000.00,8000.00,27520.00,synthetic/orders/ORD-1004
+demo-distributor,synthetic_erp,ORD-1005,CUST-005,Branch B,PKR,2026-08-03T04:00:00Z,Asia/Karachi,240000.00,12000.00,36480.00,synthetic/orders/ORD-1005
+demo-distributor,synthetic_erp,ORD-1006,CUST-006,Branch C,PKR,2026-08-09T04:00:00Z,Asia/Karachi,160000.00,20000.00,22400.00,synthetic/orders/ORD-1006
+demo-distributor,synthetic_erp,ORD-1007,CUST-007,Branch A,PKR,2026-08-17T04:00:00Z,Asia/Karachi,195000.00,5000.00,30400.00,synthetic/orders/ORD-1007
+demo-distributor,synthetic_erp,ORD-1008,CUST-008,Branch B,PKR,2026-08-25T04:00:00Z,Asia/Karachi,130000.00,15000.00,18400.00,synthetic/orders/ORD-1008
+demo-distributor,synthetic_erp,ORD-1009,CUST-009,Branch C,PKR,2026-09-02T04:00:00Z,Asia/Karachi,260000.00,10000.00,40000.00,synthetic/orders/ORD-1009
+demo-distributor,synthetic_erp,ORD-1010,CUST-010,Branch A,PKR,2026-09-09T04:00:00Z,Asia/Karachi,220000.00,7000.00,34080.00,synthetic/orders/ORD-1010
+demo-distributor,synthetic_erp,ORD-1011,CUST-011,Branch B,PKR,2026-09-17T04:00:00Z,Asia/Karachi,175000.00,25000.00,24000.00,synthetic/orders/ORD-1011
+demo-distributor,synthetic_erp,ORD-1012,CUST-012,Branch C,PKR,2026-09-25T04:00:00Z,Asia/Karachi,145000.00,5000.00,22400.00,synthetic/orders/ORD-1012

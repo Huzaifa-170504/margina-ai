@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Authenticated MARGINA business performance workspace.">
+  <title>Business workspace — MARGINA</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+  <header class="site-header site-header-dark workspace-header">
+    <a class="brand" href="/">MARGINA</a>
+    <nav aria-label="Workspace controls">
+      <span id="user-email" class="user-email">Loading session…</span>
+      <button id="logout-button" class="nav-button nav-button-dark" type="button">Sign out</button>
+    </nav>
+  </header>
+  <div class="workspace-layout">
+    <aside class="workspace-sidebar">
+      <div>
+        <p class="sidebar-label">Organization</p>
+        <select id="organization" aria-label="Organization"></select>
+      </div>
+      <div class="membership-card">
+        <span id="role-badge" class="badge">Role</span>
+        <p id="branch-scope">Checking branch access…</p>
+      </div>
+      <nav class="workspace-nav" aria-label="Workspace sections">
+        <a href="#overview" class="active">Overview</a>
+        <a href="#process">Process evidence</a>
+        <a href="#orders">Source orders</a>
+      </nav>
+      <p class="sidebar-note">Normal reports use only the currently published snapshot.</p>
+    </aside>
+
+    <main class="workspace-main">
+      <section id="overview" class="page-heading workspace-heading">
+        <div>
+          <p class="eyebrow">Authenticated workspace</p>
+          <h1>Business performance</h1>
+          <p id="workspace-subtitle" class="section-copy">Loading your authorized view…</p>
+        </div>
+        <label class="filter-control">Branch
+          <select id="workspace-branch"><option value="">All authorized branches</option></select>
+        </label>
+      </section>
+
+      <div id="workspace-status" class="status-banner" role="status">Verifying session and published data…</div>
+      <div id="role-notice" class="notice notice-neutral" hidden></div>
+
+      <section id="financial-view">
+        <section class="cards" aria-label="Financial performance" aria-live="polite">
+          <article><span>Net revenue</span><strong id="workspace-revenue">—</strong><small id="workspace-order-count">— authorized orders</small></article>
+          <article><span>Gross profit</span><strong id="workspace-gross-profit">—</strong><small>After recognized COGS</small></article>
+          <article><span>Contribution</span><strong id="workspace-contribution">—</strong><small>After variable costs</small></article>
+          <article><span>Contribution margin</span><strong id="workspace-margin">—</strong><small id="workspace-cost-coverage">Cost coverage —</small></article>
+        </section>
+        <section id="orders" class="panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow">Authorized evidence</p><h2>Source orders</h2></div>
+            <p id="workspace-snapshot" class="panel-summary"></p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Order</th><th>Branch</th><th>Net revenue</th><th>COGS</th><th>Variable costs</th><th>Contribution</th><th>Cycle</th><th>Signals</th></tr></thead>
+              <tbody id="workspace-orders"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <section id="process" class="panel">
+        <div class="panel-heading">
+          <div><p class="eyebrow">Process intelligence</p><h2>Order-to-dispatch paths</h2></div>
+          <div class="signal-pills">
+            <span class="signal"><strong id="workspace-median">—</strong> median hours</span>
+            <span class="signal"><strong id="workspace-p90">—</strong> p90 hours</span>
+          </div>
+        </div>
+        <div id="workspace-transitions" class="transition-list"></div>
+        <p id="workspace-process-note" class="notice notice-neutral"></p>
+      </section>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='workspace.js') }}" defer></script>
+</body>
+</html>
